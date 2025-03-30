@@ -1,0 +1,29 @@
+{
+  "name": "Telegram Bulk Report Bot",
+  "description": "A bot to report spam accounts in bulk using multiple Telegram sessions.",
+  "repository": "https://github.com/your-repo-link", 
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API HASH",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "required": true
+    },
+    "SESSION_STRINGS": {
+      "description": "Comma-separated list of Telegram session strings for bulk reporting",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
