@@ -1,0 +1,6 @@
+pyrogram
+telethon
+asyncio
+
+# Heroku deployment
+heroku/python
